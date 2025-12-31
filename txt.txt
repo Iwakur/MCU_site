@@ -1,0 +1,1 @@
+page with overall navigation and some hover on things for mcu components on diagram
