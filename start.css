@@ -1,78 +1,57 @@
-
 a {
-  color: white;
   text-align: center;
-  text-shadow: 2px 2px 4px #000000;
-  transition-duration: 1s, 1s, 0.5s;
   text-decoration: none;
   color: inherit;
   display: inline-block;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 8rem;
+
+  /* fix: define what transitions, not just durations */
+  transition:
+    color 0.5s ease,
+    text-shadow 1s ease,
+    transform 0.5s ease;
 }
+
 a:hover {
-  color: rgb(255, 0, 0);
-  text-shadow: 4px 4px 8px #000000;
-  transform: scale(1.1);
+  /* fix: don’t make it transparent; use solid accent */
+  color: #4FC3F7;
+  text-shadow: 0 0 14px rgba(79, 195, 247, 0.35);
+  transform: scale(1.05);
 }
-
-/*  */
-
-/* .hover-container {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 100%;
-  
-}
-
-.hover-text {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #333;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-}
-
-.hover-container:hover .hover-text {
-  display: block;
-} */
 
 .start {
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  cursor: pointer;
-  font-size: 3rem;
+  height: 70vh;
   position: relative;
 }
-/* Hover text */
+
+/* Hover text: starts above, invisible */
 .hover-text {
-  position: relative;
-  top: -20px;
-  font-size: 1rem;
-  margin-top: 10px;
+  font-size: 1.5rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  background: #1B2430;
+  color: #E6EAF0;
 
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease;
+  transform: translateY(-14px);
+  /* start higher (above) */
+  pointer-events: none;
 
-  background: #333;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
-/* Show on hover */
+/* Show on hover with “swipe/slide” down into place */
 .hover-cont:hover .hover-text {
   opacity: 1;
-  visibility: visible;
+  transform: translateY(0);
 }
