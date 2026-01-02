@@ -1,6 +1,11 @@
+svg {
+  width: 70%;
+  height: auto;
+  /* padding: 10px auto; */
+  margin: 15px auto;
+}
 
 /* SVG strokes */
-line,
 .bus {
   stroke: #3A465A;
   stroke-width: 2.5;
@@ -15,7 +20,8 @@ line,
   transition:
     stroke 160ms cubic-bezier(.2, .8, .2, 1),
     fill 160ms cubic-bezier(.2, .8, .2, 1),
-    filter 160ms cubic-bezier(.2, .8, .2, 1);
+    filter 160ms cubic-bezier(.2, .8, .2, 1),
+    stroke-width 160ms cubic-bezier(.2, .8, .2, 1);
 }
 
 /* Labels */
@@ -27,7 +33,7 @@ line,
   text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
-  transition: fill 160ms cubic-bezier(.2, .8, .2, 1);
+  /* transition: fill 160ms cubic-bezier(.2, .8, .2, 1); */
 }
 
 /* Hover highlight only */
@@ -35,6 +41,7 @@ svg g:hover .box {
   stroke: #4FC3F7;
   fill: #202B3C;
   filter: drop-shadow(0 6px 14px rgba(79, 195, 247, .22));
+  stroke-width: 3;
 }
 
 svg g:hover .label {
@@ -48,5 +55,6 @@ svg g:hover .label {
 
 #cpu:hover .box {
   stroke: #7AD7FF;
+  stroke-width: 4;
   filter: drop-shadow(0 8px 18px rgba(122, 215, 255, .28));
 }
