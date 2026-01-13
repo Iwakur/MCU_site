@@ -2,7 +2,9 @@ Architecture • Modules • Programmation        /       Télémétrie • Anal
 
 
 
-General Info -  Architecture - Modules       /       Data Visualisation
+General Info -  Architecture - Modules       /       Data Visualisation(tmp, altitude, pression, humidite, longitude et latitude, l'heure)
+
+
 
 
 
