@@ -1,0 +1,13 @@
+Architecture • Modules • Programmation        /       Télémétrie • Analyse de données • Graphiques
+
+
+
+General Info -  Architecture - Modules       /       Data Visualisation
+
+
+
+
+
+page marche with wemos d1 mini esp32 esp8266
+add help link for abbreviations and other things
+images to add
