@@ -2,8 +2,8 @@ Architecture • Modules • Programmation        /       Télémétrie • Anal
 
 
 
-General Info -  Architecture - Modules       /       Data Visualisation(tmp, altitude, pression, humidite, longitude et latitude, l'heure)
-
+General Info •  Architecture • Modules       /       Data Visualisation(tmp, altitude, pression, humidite, longitude et latitude, l'heure) offline - REaltimeData analys - Project's story
+                                             /       Static Reports • Live Analytics • Project Blog
 
 
 
